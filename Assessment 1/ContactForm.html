@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/ContactUsStyling.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale = 1" >
+</head>
+<body>
+    <img src="img/Logo.jpg" alt="Coffee Corner" id="logo">
+        <div id="welcome">
+            <h1>Contact Coffee Corner</h1>
+        </div>
+        <div id="container">
+            <div class="menu">
+                <ul>
+                    <li><b><a href="HomePage.html">Home</a></b></li>
+                    <li><b><a href="AboutUs.html">About</a></b></li>
+                    <li><b><a href="ContactForm.html" class="active">Contact</a></b></li>
+                    <li><b><a href="Gallery.html">Gallery</a></b></li>
+                  </ul>
+            </div><!-- menu end -->
+            <div id="wrapper">
+                    <form>
+                        <fieldset id="fieldset">
+                            <h2 id="h2">Contact Form</h2>
+                            <b><label id="pronoun" >Title</label></b>
+                                <select id="select" name="title">
+                                <option value="0" selected = 'selected'>Select</option>
+                                <option value="1">Mr</option>
+                                <option value="2">Miss</option>
+                                <option value="3">Mrs</option>
+                                <option value="4">Dr</option>
+                                <option value="5">Other</option>
+                                </select>
+                    <br>
+                            <b><label id="firstname" for="fname">First Name</label></b>
+                            <input type="text" name="fname" id="fname" size="30" placeholder="First Name" required maxlength="16" >
+                    <br>
+                            <b><label id="lastname" for="lname">Last Name</label></b>
+                            <input type="text" name="lname" id="lname" size="30" placeholder="Surname" required maxlength="16">
+                    <br>
+                            <b><label id="useremail" for="email">Email Address</label></b>
+                            <input type="email" name="email" id="email" size="40" placeholder="jane.lane@oulook.com" required minlength="15" maxlength="40"><br>
+                    
+                    
+                            <p id="message"><b>Messgae/Enquiry</b></p><br>
+                            <textarea id="textarea" name="text" cols="55" rows="10" placeholder="Please enter message here..." required></textarea>
+                    
+                            <button id="button" type ="submit" onclick="javascript:submitbutton();">Submit</button>
+                        </fieldset>
+                        </form>
+            </div><!-- wrapper end -->
+            <div id="footer">
+                <h3>&copy;Coffee House 2021</h3>
+            </div><!-- footer end -->
+        </div><!-- container end -->
+        <script src="js/button.js"></script>
+    </body>
+</html>
